@@ -34,7 +34,7 @@
     "standard-version": "^9.2.0"
   },
   "scripts": {
-    "install": "prebuild-install || node-gyp rebuild",
+    "install": "prebuild-install --verbose",
     "format-cxx": "git-clang-format",
     "format-js": "prettier --print-width 100 --tab-width 2 --single-quote --write index.js 'test/**/*.js' 'lib/**/*.js'",
     "lint": "eslint index.js lib test",
